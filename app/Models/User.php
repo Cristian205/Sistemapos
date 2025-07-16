@@ -28,7 +28,9 @@ class User extends Authenticatable
         'role',
         'document_number',
         'phone_number',
-        'birthdate'
+        'birthdate',
+        'avatar',
+        'activo'
     ];
 
     /**

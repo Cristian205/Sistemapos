@@ -15,4 +15,7 @@ class ShowViewsController extends Controller
     public function ShowViewLogin(){
         return view('Login.Views-login');
     }
+    public function ShowViewWelcome(){
+        return view('layouts.Welcome_Pos');
+    }
 }

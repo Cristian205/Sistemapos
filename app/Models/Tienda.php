@@ -12,24 +12,25 @@ class Tienda extends Model
     protected $table = 'registro_tienda';
 
     protected $fillable = [
-        'Nombre_tienda',
-        'Telefono_corporativo',
-        'Correo_corporativo',
-        'Direccion_corporativa',
-        'NIT',
-        'Logo_tienda',
-        'Descripcion_corporativa',
+        'nombre',
+        'telefono',
+        'email',
+        'direccion',
+        'nit',
+        'logo',
+        'descripcion',
         'plan_id',
-        'Fecha_Inicio',
-        'Fecha_Final',
+        'categoria_id',
+        'fecha_inicio',
+        'fecha_final',
         'activa',
         'ip_registro',
     ];
 
     public function plan()
-    {
-        return $this->belongsTo(Plan::class, 'plan_id');
-    }
+{
+    return $this->belongsTo(Plan::class);
+}
 
     public function usuarios()
     {
